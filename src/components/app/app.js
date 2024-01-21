@@ -91,7 +91,6 @@ export default class App extends Component {
                 <div className="top-panel d-flex">
                     <SearchPanel/>
                     <ItemStatusFilter/>
-                    <AddItem addedItem={this.addItem}/>
                 </div>
                 <TodoList
                     todos={todoData}
@@ -99,6 +98,7 @@ export default class App extends Component {
                     doneItem={this.doneItem}
                     importantItem={this.importantItem}
                 />
+                <AddItem addedItem={this.addItem}/>
             </div>
         );
     }
